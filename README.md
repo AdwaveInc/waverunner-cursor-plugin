@@ -39,7 +39,7 @@ Grok Bot can only use public HTTPS MCP. This plugin uses that remote URL — no 
 
 ## Spend safety
 
-The bundled skill tells agents to confirm with you before `launch_campaign`, `resume_campaign`, `end_campaign`, or anything else that spends wallet money. Launching charges the first day's budget from the prepaid wallet; resuming re-charges the current day.
+The bundled skill tells agents to confirm with you before `launch_campaign`, `resume_campaign`, `end_campaign`, `generate_creatives`, `launch_catalog_video_run`, or anything else that charges the prepaid wallet (including metered ad generation inside `create_campaign`). Anyone holding the `wr_` key can spend. Launching charges the first day's budget; resuming re-charges the current day; `generate_creatives` and catalog video launch also charge the wallet.
 
 ## Docs
 

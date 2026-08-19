@@ -9,7 +9,7 @@ Use the Waverunner MCP for self-serve multichannel advertising: businesses, camp
 
 ## Confirm before spending
 
-Always confirm with the user before calling `launch_campaign`, `resume_campaign`, `end_campaign`, or any other tool that spends wallet money.
+Always confirm with the user before calling `launch_campaign`, `resume_campaign`, `end_campaign`, `generate_creatives`, `launch_catalog_video_run`, or any other tool that charges the prepaid wallet (including metered ad generation inside `create_campaign`). Anyone holding the `wr_` key can spend.
 
 ## Workflow
 
