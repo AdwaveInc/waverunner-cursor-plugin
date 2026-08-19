@@ -1,0 +1,36 @@
+{
+  "name": "waverunner",
+  "displayName": "Waverunner",
+  "version": "1.0.0",
+  "description": "Self-serve multichannel ads in Cursor via the Waverunner MCP. Add businesses, create campaigns, and read performance. Confirm with the user before any wallet spend.",
+  "author": {
+    "name": "Adwave"
+  },
+  "homepage": "https://waverunner.adwave.com",
+  "repository": "https://github.com/AdwaveInc/waverunner-cursor-plugin",
+  "license": "MIT",
+  "keywords": [
+    "waverunner",
+    "adwave",
+    "advertising",
+    "ads",
+    "mcp",
+    "campaigns",
+    "multichannel"
+  ],
+  "logo": "assets/logo.png",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "WAVERUNNER_API_KEY": {
+        "type": "string",
+        "title": "Waverunner API key",
+        "description": "Bearer API key from Waverunner Settings → API keys. Keys look like wr_… . Paste the key in Plugins → Configure; never commit it.",
+        "minLength": 1
+      }
+    },
+    "required": ["WAVERUNNER_API_KEY"]
+  }
+}

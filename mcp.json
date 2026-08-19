@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "waverunner": {
+      "url": "https://waverunner.adwave.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${WAVERUNNER_API_KEY}"
+      }
+    }
+  }
+}
